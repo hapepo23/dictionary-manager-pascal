@@ -46,6 +46,7 @@ type
     procedure butUpdateClick(Sender: TObject);
     procedure edtFilterChange(Sender: TObject);
     procedure lbxKeysSelectionChange(Sender: TObject; User: boolean);
+    procedure mmKeyChange(Sender: TObject);
   private
     Mode: TEditMode;
     procedure SetWidgets(KeysPos: integer;
@@ -131,7 +132,7 @@ begin
       if lbxKeys.Selected[i] then
         lbxKeys.Selected[i] := False;
   Mode := emAdd;
-  SetWidgets(-1, True, False, False, True, True);
+  SetWidgets(-1, True, False, False, True, False);
   mmKey.SetFocus;
 end;
 
@@ -203,6 +204,20 @@ begin
   end
   else
     SetWidgets(-1, True, False, (lbxKeys.SelCount > 0), True, False);
+end;
+
+procedure TViewEditForm.mmKeyChange(Sender: TObject);
+var
+  k: string;
+begin
+  if Mode = emAdd then
+  begin
+    k := Trim(mmKey.Lines.Text);
+    if k = '' then
+      butSave.Enabled := False
+    else
+      butSave.Enabled := (not Dict.KeyExists(k));
+  end;
 end;
 
 procedure TViewEditForm.SetWidgets(KeysPos: integer;

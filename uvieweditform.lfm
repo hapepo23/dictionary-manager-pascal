@@ -315,6 +315,7 @@ object ViewEditForm: TViewEditForm
     0000
   }
   Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
   OnClose = FormClose
   OnShow = FormShow
   object labFilter: TLabel
@@ -409,6 +410,7 @@ object ViewEditForm: TViewEditForm
     ParentFont = False
     TabOrder = 6
     WantReturns = False
+    OnChange = mmKeyChange
   end
   object labData: TLabel
     Left = 354

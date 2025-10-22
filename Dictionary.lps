@@ -7,8 +7,8 @@
       <Unit>
         <Filename Value="Dictionary.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="28" Y="12"/>
-        <UsageCount Value="69"/>
+        <CursorPos X="30" Y="12"/>
+        <UsageCount Value="70"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -17,7 +17,7 @@
         <UnitName Value="uApplication"/>
         <EditorIndex Value="2"/>
         <CursorPos Y="16"/>
-        <UsageCount Value="69"/>
+        <UsageCount Value="70"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -28,7 +28,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="69"/>
+        <UsageCount Value="70"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -39,7 +39,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="3"/>
         <CursorPos X="31" Y="22"/>
-        <UsageCount Value="66"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -47,9 +47,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDict"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="162"/>
-        <CursorPos Y="175"/>
-        <UsageCount Value="61"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -61,9 +61,9 @@
         <UnitName Value="uViewEditForm"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="91"/>
-        <CursorPos X="15" Y="99"/>
-        <UsageCount Value="51"/>
+        <TopLine Value="206"/>
+        <CursorPos Y="220"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -73,7 +73,7 @@
         <UnitName Value="uGlobalData"/>
         <EditorIndex Value="5"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="50"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -157,38 +157,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uapplication.pas"/>
-        <Caret Line="112" Column="6" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="uapplication.pas"/>
-        <Caret Line="122" Column="6" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="udict.pas"/>
-        <Caret Line="50" Column="6" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="udict.pas"/>
-        <Caret Line="57" Column="6" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="udict.pas"/>
-        <Caret Line="113" Column="6" TopLine="99"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="142" Column="16" TopLine="142"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="158" Column="32" TopLine="149"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="246" Column="38" TopLine="227"/>
-      </Position>
       <Position>
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="50" Column="15" TopLine="37"/>
@@ -276,13 +244,45 @@
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="196" Column="14" TopLine="191"/>
       </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="100" Column="15" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="213" Column="31" TopLine="201"/>
+      </Position>
+      <Position>
+        <Filename Value="udict.pas"/>
+        <Caret Line="175" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="211" Column="18" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="221" Column="30" TopLine="251"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="135" Column="42" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="215" Column="28" TopLine="194"/>
+      </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="135" Column="49" TopLine="125"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default">
         <Mode Name="default">
           <local>
-            <LaunchingApplication PathPlusParams="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
           </local>
         </Mode>
       </Modes>
@@ -291,17 +291,8 @@
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
-  <Debugging>
-    <BreakPoints>
-      <Item>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="udict.pas"/>
-        <Line Value="55"/>
-      </Item>
-    </BreakPoints>
-  </Debugging>
 </CONFIG>
