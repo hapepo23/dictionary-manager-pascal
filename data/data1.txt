@@ -1,0 +1,6 @@
+Key1	Data11	Data12	Data13
+Key2	Data21	Data22
+Key3	Data31	Data32	Data33	Data34	Data35
+Key4	
+Key5	Data51	Data52	Data53	Data54
+Key6	Data61
