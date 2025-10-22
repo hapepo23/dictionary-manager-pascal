@@ -408,6 +408,7 @@ object ViewEditForm: TViewEditForm
     Font.Height = -15
     Font.Name = 'Sans'
     ParentFont = False
+    ScrollBars = ssAutoVertical
     TabOrder = 6
     WantReturns = False
     OnChange = mmKeyChange
@@ -433,6 +434,7 @@ object ViewEditForm: TViewEditForm
       ''
     )
     ParentFont = False
+    ScrollBars = ssAutoVertical
     TabOrder = 7
   end
   object butSave: TButton

@@ -156,7 +156,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="50" Column="15" TopLine="37"/>
@@ -262,10 +262,6 @@
       </Position>
       <Position>
         <Filename Value="uvieweditform.pas"/>
-        <Caret Line="221" Column="30" TopLine="251"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
         <Caret Line="135" Column="42" TopLine="123"/>
       </Position>
       <Position>
@@ -291,8 +287,6 @@
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
-      <List Name="WorkingDirectory" Type="File" Count="1"/>
-      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>
