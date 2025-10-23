@@ -37,6 +37,7 @@
               <RunWithoutDebug Value="True"/>
               <DebugInfoType Value="dsDwarf3"/>
             </Debugging>
+            <LinkSmart Value="True"/>
             <Options>
               <Win32>
                 <GraphicApplication Value="True"/>
@@ -144,6 +145,13 @@
         </Win32>
       </Options>
     </Linking>
+    <Other>
+      <Verbosity>
+        <ShowLineNum Value="True"/>
+        <ShowAll Value="True"/>
+        <ShowCompProc Value="True"/>
+      </Verbosity>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions>
