@@ -7,7 +7,7 @@
       <Unit>
         <Filename Value="Dictionary.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="30" Y="12"/>
+        <CursorPos X="28" Y="12"/>
         <UsageCount Value="70"/>
         <Loaded Value="True"/>
       </Unit>
@@ -37,8 +37,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDictEntry"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="3"/>
-        <CursorPos X="31" Y="22"/>
+        <CursorPos X="8" Y="38"/>
         <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit>
@@ -46,8 +45,9 @@
         <Filename Value="udict.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDict"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="45"/>
+        <TopLine Value="27"/>
         <CursorPos Y="55"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
@@ -59,7 +59,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uViewEditForm"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
         <TopLine Value="206"/>
         <CursorPos Y="220"/>
@@ -156,27 +155,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="50" Column="15" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="183" Column="3" TopLine="168"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="198" Column="5" TopLine="184"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="183" Column="3" TopLine="169"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="198" Column="5" TopLine="184"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="183" Column="3" TopLine="169"/>
@@ -271,6 +250,30 @@
       <Position>
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="135" Column="49" TopLine="125"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="19" Column="14" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="47" Column="21" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="19" Column="14" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="57" Column="33" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="20" Column="15" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="udictentry.pas"/>
+        <Caret Line="39" Column="17" TopLine="25"/>
       </Position>
     </JumpHistory>
     <RunParams>
