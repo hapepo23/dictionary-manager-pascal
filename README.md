@@ -16,3 +16,4 @@ The displayed data record is saved as:
 	Wir sollten mehr Gemüse kaufen. TAB もっと 野[や]菜[さい]を 買[か]いましょう。 TAB
     Motto yasai o kaimashou. TAB Beispielsatz
 
+The following applies to the file './data/handedict.txt': Chinese-German Dictionary "HanDeDict", License: CC BY-SA 2.0, [Download link](https://handedict.zydeo.net/de/download), file was created Oct. 22, 2025.
