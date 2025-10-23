@@ -15,6 +15,7 @@
         <Filename Value="uapplication.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uApplication"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos Y="16"/>
         <UsageCount Value="70"/>
@@ -45,7 +46,6 @@
         <Filename Value="udict.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDict"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
         <TopLine Value="27"/>
         <CursorPos Y="55"/>
@@ -290,6 +290,8 @@
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>
