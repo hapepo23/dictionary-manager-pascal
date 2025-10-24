@@ -46,9 +46,11 @@
           </Linking>
           <Other>
             <Verbosity>
-              <ShowNotes Value="False"/>
-              <ShowHints Value="False"/>
+              <ShowLineNum Value="True"/>
             </Verbosity>
+            <CompilerMessages>
+              <IgnoredMessages idx6058="True" idx5093="True" idx5071="True" idx5062="True" idx5024="True" idx4046="True"/>
+            </CompilerMessages>
           </Other>
         </CompilerOptions>
       </Item>
