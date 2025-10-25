@@ -228,8 +228,8 @@ begin
   butSave.Enabled := SavBut;
   if ClrKeyData then
   begin
-    mmKey.Lines.Text := '';
-    mmData.Lines.Text := '';
+    mmKey.Lines.Clear;
+    mmData.Lines.Clear;
   end;
   mmKey.ReadOnly := not (Mode = emAdd);
   mmData.ReadOnly := (Mode = emNone);
