@@ -314,7 +314,6 @@ object MainForm: TMainForm
   }
   Menu = menuMain
   Position = poScreenCenter
-  LCLVersion = '4.2.0.0'
   OnCloseQuery = FormCloseQuery
   OnDestroy = FormDestroy
   OnShow = FormShow
@@ -375,7 +374,7 @@ object MainForm: TMainForm
       end
     end
     object menuItem3: TMenuItem
-      Caption = 'View/Edit'
+      Caption = 'View && Edit'
       OnClick = menuItem3Click
     end
   end

@@ -15,8 +15,8 @@
         <Filename Value="uapplication.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uApplication"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="8"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
         <CursorPos Y="16"/>
         <UsageCount Value="72"/>
         <Loaded Value="True"/>
@@ -28,9 +28,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="30"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="70"/>
+        <CursorPos X="37" Y="86"/>
         <UsageCount Value="72"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -62,8 +62,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uViewEditForm"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="30"/>
+        <TopLine Value="32"/>
         <CursorPos X="7" Y="53"/>
         <UsageCount Value="54"/>
         <Loaded Value="True"/>
@@ -309,8 +310,6 @@
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
-      <List Name="WorkingDirectory" Type="File" Count="1"/>
-      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>

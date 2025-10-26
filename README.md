@@ -1,6 +1,6 @@
 # Dictionary Manager (Pascal)
 
-A simple dictionary manager written in [Free Pascal](https://www.freepascal.org/) with the [Lazarus IDE](https://www.lazarus-ide.org/) for viewing and editing text files with lines in the form:
+A simple dictionary manager written in [Free Pascal](https://www.freepascal.org/) with the [Lazarus IDE](https://www.lazarus-ide.org/) and [LCLWidgetType := qt5](https://wiki.freepascal.org/Qt5_Interface) for viewing and editing text files with lines in the form:
 
     key TAB data1 TAB data2 TAB ...
 

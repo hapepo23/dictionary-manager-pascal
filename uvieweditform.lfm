@@ -4,7 +4,7 @@ object ViewEditForm: TViewEditForm
   Top = 32
   Width = 696
   BorderStyle = bsSingle
-  Caption = 'View/Edit Dictionary'
+  Caption = 'View & Edit Dictionary'
   ClientHeight = 491
   ClientWidth = 696
   Font.Height = -16
@@ -315,7 +315,6 @@ object ViewEditForm: TViewEditForm
     0000
   }
   Position = poScreenCenter
-  LCLVersion = '4.2.0.0'
   OnClose = FormClose
   OnShow = FormShow
   object labFilter: TLabel
@@ -329,10 +328,10 @@ object ViewEditForm: TViewEditForm
     ParentFont = False
   end
   object butEmptyFilter: TButton
-    Left = 291
-    Height = 41
-    Top = 8
-    Width = 45
+    Left = 296
+    Height = 24
+    Top = 16
+    Width = 37
     Caption = 'X'
     Font.Height = -15
     Font.Name = 'Sans'
@@ -342,8 +341,8 @@ object ViewEditForm: TViewEditForm
   end
   object lbxKeys: TListBox
     Left = 16
-    Height = 386
-    Top = 56
+    Height = 394
+    Top = 48
     Width = 320
     Font.Height = -15
     Font.Name = 'Sans'
@@ -391,9 +390,9 @@ object ViewEditForm: TViewEditForm
     OnClick = butDeleteClick
   end
   object labKey: TLabel
-    Left = 354
+    Left = 353
     Height = 22
-    Top = 27
+    Top = 16
     Width = 29
     Caption = 'Key:'
     Font.Height = -15
@@ -402,8 +401,8 @@ object ViewEditForm: TViewEditForm
   end
   object mmKey: TMemo
     Left = 353
-    Height = 56
-    Top = 56
+    Height = 64
+    Top = 48
     Width = 327
     Font.Height = -15
     Font.Name = 'Sans'
@@ -451,10 +450,10 @@ object ViewEditForm: TViewEditForm
   end
   object edtFilter: TEdit
     Left = 64
-    Height = 39
-    Top = 8
-    Width = 216
-    Font.Height = -15
+    Height = 35
+    Top = 16
+    Width = 224
+    Font.Height = -13
     Font.Name = 'Sans'
     ParentFont = False
     TabOrder = 0
