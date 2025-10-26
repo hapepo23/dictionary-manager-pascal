@@ -8,7 +8,7 @@
         <Filename Value="Dictionary.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="28" Y="12"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="72"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -16,8 +16,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uApplication"/>
         <EditorIndex Value="2"/>
+        <TopLine Value="8"/>
         <CursorPos Y="16"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="72"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -27,8 +28,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="71"/>
+        <TopLine Value="30"/>
+        <UsageCount Value="72"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -37,8 +40,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDictEntry"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="8" Y="38"/>
-        <UsageCount Value="68"/>
+        <TopLine Value="7"/>
+        <CursorPos X="37" Y="26"/>
+        <UsageCount Value="69"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -46,8 +50,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDict"/>
         <EditorIndex Value="4"/>
-        <CursorPos Y="55"/>
-        <UsageCount Value="63"/>
+        <TopLine Value="20"/>
+        <CursorPos X="39" Y="38"/>
+        <UsageCount Value="64"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -57,11 +62,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uViewEditForm"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="28"/>
-        <CursorPos X="11" Y="38"/>
-        <UsageCount Value="53"/>
+        <TopLine Value="30"/>
+        <CursorPos X="7" Y="53"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -71,7 +75,7 @@
         <UnitName Value="uGlobalData"/>
         <EditorIndex Value="5"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -161,16 +165,15 @@
         <CursorPos Y="2634"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/sysutils/sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="319"/>
+        <CursorPos X="13" Y="330"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="211" Column="18" TopLine="109"/>
-      </Position>
-      <Position>
-        <Filename Value="uvieweditform.pas"/>
-        <Caret Line="135" Column="42" TopLine="123"/>
-      </Position>
       <Position>
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="215" Column="28" TopLine="194"/>
@@ -283,6 +286,14 @@
         <Filename Value="uvieweditform.pas"/>
         <Caret Line="262" Column="11" TopLine="244"/>
       </Position>
+      <Position>
+        <Filename Value="uvieweditform.pas"/>
+        <Caret Line="223" Column="69" TopLine="212"/>
+      </Position>
+      <Position>
+        <Filename Value="udict.pas"/>
+        <Caret Line="73" Column="15" TopLine="53"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -298,6 +309,8 @@
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>

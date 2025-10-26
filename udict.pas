@@ -23,19 +23,19 @@ type
   public
     constructor Create;
     destructor Destroy; override;
-    function AddDictEntry(pDE: TDictEntry): boolean;
-    function AddString(pLine: string): boolean;
-    function GetDictEntry(pKey: string): TDictEntry;
-    function Remove(pKey: string): boolean;
-    function FileImport(pFilePath: string): boolean;
-    function FileExportNew(pFilePath: string): boolean;
+    function AddDictEntry(var pDE: TDictEntry): boolean;
+    function AddString(const pLine: string): boolean;
+    function GetDictEntry(const pKey: string): TDictEntry;
+    function Remove(const pKey: string): boolean;
+    function FileImport(const pFilePath: string): boolean;
+    function FileExportNew(const pFilePath: string): boolean;
     function FileExportOld: boolean;
-    function KeyExists(pKey: string): boolean;
+    function KeyExists(const pKey: string): boolean;
     function Length: integer;
     function ToString: string; override;
     procedure Clear;
-    procedure GetKeysList(pKeys: TStringList; pFilter: string);
-    procedure GetSortedKeysList(pSortedKeys: TStringList; pFilter: string);
+    procedure GetKeysList(const pKeys: TStringList; const pFilter: string);
+    procedure GetSortedKeysList(const pSortedKeys: TStringList; const pFilter: string);
     property IsDirty: boolean read sDirty;
     property Filename: string read sFilename;
   end;
@@ -57,7 +57,7 @@ begin
   inherited Destroy;
 end;
 
-function TDict.AddDictEntry(pDE: TDictEntry): boolean;
+function TDict.AddDictEntry(var pDE: TDictEntry): boolean;
 begin
   if pDE.Key = '' then
     Result := False
@@ -73,7 +73,7 @@ begin
     FreeAndNil(pDE);
 end;
 
-function TDict.AddString(pLine: string): boolean;
+function TDict.AddString(const pLine: string): boolean;
 var
   DE: TDictEntry;
 begin
@@ -81,14 +81,14 @@ begin
   Result := AddDictEntry(DE);
 end;
 
-function TDict.GetDictEntry(pKey: string): TDictEntry;
+function TDict.GetDictEntry(const pKey: string): TDictEntry;
 begin
   Result := nil;
   if sData.ContainsKey(pKey) then
     Result := sData.Items[pKey];
 end;
 
-function TDict.Remove(pKey: string): boolean;
+function TDict.Remove(const pKey: string): boolean;
 begin
   Result := False;
   if sData.ContainsKey(pKey) then
@@ -100,7 +100,7 @@ begin
   end;
 end;
 
-function TDict.FileImport(pFilePath: string): boolean;
+function TDict.FileImport(const pFilePath: string): boolean;
 var
   myFile: TextFile;
   line: string;
@@ -123,7 +123,7 @@ begin
   end;
 end;
 
-function TDict.FileExportNew(pFilePath: string): boolean;
+function TDict.FileExportNew(const pFilePath: string): boolean;
 var
   myFile: TextFile;
   DE: TDictEntry;
@@ -147,7 +147,7 @@ begin
   Result := FileExportNew(sFilename);
 end;
 
-function TDict.KeyExists(pKey: string): boolean;
+function TDict.KeyExists(const pKey: string): boolean;
 begin
   Result := sData.ContainsKey(pKey);
 end;
@@ -179,7 +179,7 @@ begin
   sDirty := False;
 end;
 
-procedure TDict.GetKeysList(pKeys: TStringList; pFilter: string);
+procedure TDict.GetKeysList(const pKeys: TStringList; const pFilter: string);
 var
   Key: string;
   trimmedfilter: string;
@@ -210,7 +210,7 @@ begin
   end;
 end;
 
-procedure TDict.GetSortedKeysList(pSortedKeys: TStringList; pFilter: string);
+procedure TDict.GetSortedKeysList(const pSortedKeys: TStringList; const pFilter: string);
 begin
   GetKeysList(pSortedKeys, pFilter);
   pSortedKeys.Sort;

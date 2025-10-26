@@ -15,7 +15,7 @@ type
     sKey: string;
     sData: string; // NL-delimited
   public
-    constructor Create(pLine: string); // TAB-delimited
+    constructor Create(const pLine: string); // TAB-delimited
     function ToString: string; override; // TAB-delimited
     property Key: string read sKey write sKey;
     property Data: string read sData write sData;
@@ -23,7 +23,7 @@ type
 
 implementation
 
-constructor TDictEntry.Create(pLine: string);
+constructor TDictEntry.Create(const pLine: string);
 var
   Parts: TStringDynArray;
 begin

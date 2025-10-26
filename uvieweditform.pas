@@ -48,8 +48,9 @@ type
     procedure mmKeyChange(Sender: TObject);
   private
     Mode: TEditMode;
-    procedure SetWidgets(KeysPos: integer;
-      AddBut, UpdBut, DelBut, ClrKeyData, SavBut: boolean);
+    procedure SetWidgets(const KeysPos: integer;
+  		const AddBut: boolean; const UpdBut: boolean; const DelBut: boolean;
+  		const ClrKeyData: boolean; const SavBut: boolean);
     procedure DisplayDataAt(index: integer);
   end;
 
@@ -219,8 +220,9 @@ begin
   end;
 end;
 
-procedure TViewEditForm.SetWidgets(KeysPos: integer;
-  AddBut, UpdBut, DelBut, ClrKeyData, SavBut: boolean);
+procedure TViewEditForm.SetWidgets(const KeysPos: integer;
+  const AddBut: boolean; const UpdBut: boolean; const DelBut: boolean;
+  const ClrKeyData: boolean; const SavBut: boolean);
 begin
   butAdd.Enabled := AddBut;
   butUpdate.Enabled := UpdBut;
