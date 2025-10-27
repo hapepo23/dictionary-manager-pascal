@@ -13,15 +13,9 @@
       </XPManifest>
       <Icon Value="0"/>
     </General>
-    <MacroValues Count="1">
-      <Macro1 Name="LCLWidgetType" Value="qt5"/>
-    </MacroValues>
     <BuildModes>
       <Item Name="Default" Default="True"/>
       <Item Name="Release">
-        <MacroValues Count="1">
-          <Macro1 Name="LCLWidgetType" Value="qt5"/>
-        </MacroValues>
         <CompilerOptions>
           <Version Value="11"/>
           <Target>
@@ -62,7 +56,7 @@
         </CompilerOptions>
       </Item>
       <SharedMatrixOptions Count="1">
-        <Item1 ID="403546713744" Modes="Release,Default" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
+        <Item1 ID="403546713744" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
       </SharedMatrixOptions>
     </BuildModes>
     <PublishOptions>

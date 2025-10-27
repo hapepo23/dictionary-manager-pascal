@@ -1,11 +1,11 @@
 object ViewEditForm: TViewEditForm
   Left = 365
-  Height = 491
+  Height = 489
   Top = 32
   Width = 696
   BorderStyle = bsSingle
   Caption = 'View & Edit Dictionary'
-  ClientHeight = 491
+  ClientHeight = 489
   ClientWidth = 696
   Font.Height = -16
   Font.Name = 'Sans'
@@ -329,10 +329,10 @@ object ViewEditForm: TViewEditForm
   end
   object butEmptyFilter: TButton
     Left = 296
-    Height = 24
-    Top = 16
-    Width = 37
-    Caption = 'X'
+    Height = 35
+    Top = 8
+    Width = 40
+    Caption = '❌'
     Font.Height = -15
     Font.Name = 'Sans'
     ParentFont = False
@@ -390,7 +390,7 @@ object ViewEditForm: TViewEditForm
     OnClick = butDeleteClick
   end
   object labKey: TLabel
-    Left = 353
+    Left = 503
     Height = 22
     Top = 16
     Width = 29
@@ -401,7 +401,7 @@ object ViewEditForm: TViewEditForm
   end
   object mmKey: TMemo
     Left = 353
-    Height = 64
+    Height = 56
     Top = 48
     Width = 327
     Font.Height = -15
@@ -413,9 +413,9 @@ object ViewEditForm: TViewEditForm
     OnChange = mmKeyChange
   end
   object labData: TLabel
-    Left = 354
+    Left = 503
     Height = 22
-    Top = 120
+    Top = 112
     Width = 36
     Caption = 'Data:'
     Font.Height = -15
@@ -451,7 +451,7 @@ object ViewEditForm: TViewEditForm
   object edtFilter: TEdit
     Left = 64
     Height = 35
-    Top = 16
+    Top = 8
     Width = 224
     Font.Height = -13
     Font.Name = 'Sans'
