@@ -1,12 +1,13 @@
 object ViewEditForm: TViewEditForm
   Left = 365
-  Height = 489
+  Height = 410
   Top = 32
-  Width = 696
-  BorderStyle = bsSingle
+  Width = 750
   Caption = 'View & Edit Dictionary'
-  ClientHeight = 489
-  ClientWidth = 696
+  ClientHeight = 410
+  ClientWidth = 750
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 750
   Font.Height = -16
   Font.Name = 'Sans'
   Icon.Data = {
@@ -316,147 +317,310 @@ object ViewEditForm: TViewEditForm
   }
   Position = poScreenCenter
   OnClose = FormClose
+  OnResize = FormResize
   OnShow = FormShow
-  object labFilter: TLabel
-    Left = 16
-    Height = 22
-    Top = 16
-    Width = 39
-    Caption = 'Filter:'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-  end
-  object butEmptyFilter: TButton
-    Left = 296
-    Height = 35
-    Top = 8
-    Width = 40
-    Caption = '❌'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    TabOrder = 1
-    OnClick = butEmptyFilterClick
-  end
-  object lbxKeys: TListBox
-    Left = 16
-    Height = 394
-    Top = 48
-    Width = 320
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ItemHeight = 0
-    MultiSelect = True
-    ParentFont = False
-    TabOrder = 2
-    TopIndex = -1
-    OnSelectionChange = lbxKeysSelectionChange
-  end
-  object butAdd: TButton
-    Left = 16
-    Height = 33
-    Top = 448
-    Width = 75
-    Caption = 'Add'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    TabOrder = 3
-    OnClick = butAddClick
-  end
-  object butUpdate: TButton
-    Left = 136
-    Height = 33
-    Top = 448
-    Width = 78
-    Caption = 'Update'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    TabOrder = 4
-    OnClick = butUpdateClick
-  end
-  object butDelete: TButton
-    Left = 261
-    Height = 33
-    Top = 448
-    Width = 75
-    Caption = 'Delete'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    TabOrder = 5
-    OnClick = butDeleteClick
-  end
-  object labKey: TLabel
-    Left = 503
-    Height = 22
-    Top = 16
-    Width = 29
-    Caption = 'Key:'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-  end
-  object mmKey: TMemo
-    Left = 353
-    Height = 56
-    Top = 48
-    Width = 327
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    ScrollBars = ssAutoVertical
-    TabOrder = 6
-    WantReturns = False
-    OnChange = mmKeyChange
-  end
-  object labData: TLabel
-    Left = 503
-    Height = 22
-    Top = 112
-    Width = 36
-    Caption = 'Data:'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-  end
-  object mmData: TMemo
-    Left = 353
-    Height = 298
-    Top = 144
-    Width = 327
-    Font.Height = -15
-    Font.Name = 'Sans'
-    Lines.Strings = (
-      ''
-    )
-    ParentFont = False
-    ScrollBars = ssAutoVertical
-    TabOrder = 7
-  end
-  object butSave: TButton
-    Left = 605
-    Height = 33
-    Top = 448
-    Width = 75
-    Caption = 'Save'
-    Font.Height = -15
-    Font.Name = 'Sans'
-    ParentFont = False
-    TabOrder = 8
-    OnClick = butSaveClick
-  end
-  object edtFilter: TEdit
-    Left = 64
-    Height = 35
-    Top = 8
-    Width = 224
-    Font.Height = -13
-    Font.Name = 'Sans'
-    ParentFont = False
+  object pnLeft: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 410
+    Top = 0
+    Width = 368
+    Alignment = taLeftJustify
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 410
+    ClientWidth = 368
+    Constraints.MinWidth = 300
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 0
-    OnChange = edtFilterChange
+    object labFilter: TLabel
+      AnchorSideLeft.Control = pnLeft
+      AnchorSideTop.Control = pnLeft
+      Left = 8
+      Height = 22
+      Top = 12
+      Width = 39
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 12
+      Caption = 'Filter:'
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object edtFilter: TEdit
+      AnchorSideTop.Control = pnLeft
+      AnchorSideRight.Control = butEmptyFilter
+      Left = 56
+      Height = 35
+      Top = 8
+      Width = 261
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 0
+      OnChange = edtFilterChange
+    end
+    object butEmptyFilter: TButton
+      AnchorSideLeft.Control = edtFilter
+      AnchorSideTop.Control = pnLeft
+      AnchorSideRight.Control = pnLeft
+      AnchorSideRight.Side = asrBottom
+      Left = 325
+      Height = 35
+      Top = 8
+      Width = 35
+      Anchors = [akTop, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      Caption = '❌'
+      Constraints.MaxWidth = 35
+      Constraints.MinWidth = 35
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 1
+      OnClick = butEmptyFilterClick
+    end
+    object lbxKeys: TListBox
+      AnchorSideLeft.Control = pnLeft
+      AnchorSideTop.Control = pnLeft
+      AnchorSideRight.Control = pnLeft
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = pnLeft
+      AnchorSideBottom.Side = asrBottom
+      Left = 8
+      Height = 309
+      Top = 52
+      Width = 352
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 52
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 49
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      MultiSelect = True
+      ParentFont = False
+      TabOrder = 2
+      TopIndex = -1
+      OnSelectionChange = lbxKeysSelectionChange
+    end
+    object butAdd: TButton
+      AnchorSideLeft.Control = pnLeft
+      AnchorSideBottom.Control = pnLeft
+      AnchorSideBottom.Side = asrBottom
+      Left = 8
+      Height = 33
+      Top = 369
+      Width = 75
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'Add'
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 3
+      OnClick = butAddClick
+    end
+    object butUpdate: TButton
+      AnchorSideLeft.Control = butAdd
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideRight.Side = asrCenter
+      AnchorSideBottom.Control = pnLeft
+      AnchorSideBottom.Side = asrBottom
+      Left = 99
+      Height = 33
+      Top = 369
+      Width = 75
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Left = 16
+      BorderSpacing.Bottom = 8
+      Caption = 'Update'
+      Constraints.MaxWidth = 75
+      Constraints.MinWidth = 75
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 4
+      OnClick = butUpdateClick
+    end
+    object butDelete: TButton
+      AnchorSideRight.Control = pnLeft
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = pnLeft
+      AnchorSideBottom.Side = asrBottom
+      Left = 285
+      Height = 33
+      Top = 369
+      Width = 75
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'Delete'
+      Constraints.MaxHeight = 33
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 33
+      Constraints.MinWidth = 75
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 5
+      OnClick = butDeleteClick
+    end
+  end
+  object pnRight: TPanel
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 367
+    Height = 410
+    Top = 0
+    Width = 383
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 410
+    ClientWidth = 383
+    Constraints.MinWidth = 350
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    object mmKey: TMemo
+      AnchorSideLeft.Control = pnRight
+      AnchorSideTop.Control = pnRight
+      AnchorSideRight.Control = pnRight
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = labData
+      AnchorSideBottom.Side = asrCenter
+      Left = 8
+      Height = 56
+      Top = 52
+      Width = 367
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 52
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Constraints.MaxHeight = 56
+      Constraints.MinHeight = 56
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      ScrollBars = ssAutoVertical
+      TabOrder = 0
+      WantReturns = False
+      OnChange = mmKeyChange
+    end
+    object mmData: TMemo
+      AnchorSideLeft.Control = pnRight
+      AnchorSideTop.Control = labData
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = pnRight
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = butSave
+      Left = 8
+      Height = 219
+      Top = 142
+      Width = 367
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Font.Height = -15
+      Font.Name = 'Sans'
+      Lines.Strings = (
+        ''
+      )
+      ParentFont = False
+      ScrollBars = ssAutoVertical
+      TabOrder = 1
+    end
+    object butSave: TButton
+      AnchorSideTop.Control = mmData
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = pnRight
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = pnRight
+      AnchorSideBottom.Side = asrBottom
+      Left = 300
+      Height = 33
+      Top = 369
+      Width = 75
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'Save'
+      Constraints.MaxHeight = 33
+      Constraints.MaxWidth = 75
+      Constraints.MinHeight = 33
+      Constraints.MinWidth = 75
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 2
+      OnClick = butSaveClick
+    end
+    object labKey: TLabel
+      AnchorSideLeft.Control = pnRight
+      AnchorSideTop.Control = pnRight
+      AnchorSideRight.Control = pnRight
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = mmKey
+      Left = 8
+      Height = 24
+      Top = 15
+      Width = 367
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 15
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'Key:'
+      Constraints.MaxHeight = 24
+      Constraints.MinHeight = 24
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object labData: TLabel
+      AnchorSideLeft.Control = pnRight
+      AnchorSideTop.Control = mmKey
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = pnRight
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = mmData
+      AnchorSideBottom.Side = asrBottom
+      Left = 8
+      Height = 24
+      Top = 112
+      Width = 367
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'Data:'
+      Constraints.MaxHeight = 24
+      Constraints.MinHeight = 24
+      Font.Height = -15
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
   end
 end

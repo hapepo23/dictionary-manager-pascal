@@ -11,7 +11,7 @@ uses
   Controls,
   Graphics,
   Dialogs,
-  StdCtrls,
+  StdCtrls, ExtCtrls,
   uGlobalData,
   uDict,
   uDictEntry;
@@ -24,18 +24,21 @@ type
   { TViewEditForm }
 
   TViewEditForm = class(TForm)
-    butSave: TButton;
-    butEmptyFilter: TButton;
     butAdd: TButton;
-    butUpdate: TButton;
     butDelete: TButton;
+    butEmptyFilter: TButton;
+    butSave: TButton;
+    butUpdate: TButton;
     edtFilter: TEdit;
+    labData: TLabel;
     labFilter: TLabel;
     labKey: TLabel;
-    labData: TLabel;
     lbxKeys: TListBox;
-    mmKey: TMemo;
     mmData: TMemo;
+    mmKey: TMemo;
+    pnLeft: TPanel;
+    pnRight: TPanel;
+    procedure FormResize(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure butAddClick(Sender: TObject);
@@ -48,9 +51,9 @@ type
     procedure mmKeyChange(Sender: TObject);
   private
     Mode: TEditMode;
-    procedure SetWidgets(const KeysPos: integer;
-  		const AddBut: boolean; const UpdBut: boolean; const DelBut: boolean;
-  		const ClrKeyData: boolean; const SavBut: boolean);
+    procedure SetWidgets(const KeysPos: integer; const AddBut: boolean;
+      const UpdBut: boolean; const DelBut: boolean; const ClrKeyData: boolean;
+      const SavBut: boolean);
     procedure DisplayDataAt(index: integer);
   end;
 
@@ -70,6 +73,12 @@ begin
   DisplayDataAt(0);
   SetWidgets(0, True, False, False, (lbxKeys.SelCount = 0), False);
   lbxKeys.SetFocus;
+end;
+
+procedure TViewEditForm.FormResize(Sender: TObject);
+begin
+  pnLeft.Width := ViewEditForm.Width div 2;
+  pnRight.Width := ViewEditForm.Width - pnLeft.Width;
 end;
 
 procedure TViewEditForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -220,9 +229,9 @@ begin
   end;
 end;
 
-procedure TViewEditForm.SetWidgets(const KeysPos: integer;
-  const AddBut: boolean; const UpdBut: boolean; const DelBut: boolean;
-  const ClrKeyData: boolean; const SavBut: boolean);
+procedure TViewEditForm.SetWidgets(const KeysPos: integer; const AddBut: boolean;
+  const UpdBut: boolean; const DelBut: boolean; const ClrKeyData: boolean;
+  const SavBut: boolean);
 begin
   butAdd.Enabled := AddBut;
   butUpdate.Enabled := UpdBut;

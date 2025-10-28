@@ -2,11 +2,12 @@ object MainForm: TMainForm
   Left = 500
   Height = 300
   Top = 32
-  Width = 600
-  BorderStyle = bsSingle
+  Width = 500
   Caption = 'Dictionary Manager'
   ClientHeight = 300
-  ClientWidth = 600
+  ClientWidth = 500
+  Constraints.MinHeight = 200
+  Constraints.MinWidth = 400
   Icon.Data = {
     BE2500000000010001003030000001002000A825000016000000280000003000
     0000600000000100200000000000002400006400000064000000000000000000
@@ -322,7 +323,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 281
     Top = 8
-    Width = 584
+    Width = 484
     Anchors = [akTop, akLeft, akRight, akBottom]
     AutoSize = False
     BorderSpacing.Around = 10
