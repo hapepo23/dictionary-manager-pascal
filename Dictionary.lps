@@ -27,9 +27,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="70"/>
+        <TopLine Value="61"/>
         <CursorPos X="17" Y="86"/>
         <UsageCount Value="78"/>
         <Loaded Value="True"/>
@@ -62,6 +61,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uViewEditForm"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
         <TopLine Value="77"/>
         <CursorPos X="54" Y="81"/>
@@ -154,6 +154,7 @@
       <Unit>
         <Filename Value="uvieweditform.lfm"/>
         <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
